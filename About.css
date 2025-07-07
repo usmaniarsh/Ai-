@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  .logo img {
+    max-width: 200px;
+    height: auto;
+  }
+   nav ul {
+    list-style: none; 
+    display: flex;
+    gap: 20px; 
+  }
+   nav ul li a {
+    text-decoration: none; 
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  
+nav ul li a:hover {
+    background-color: #ea9090; 
+    color: #a40000; 
+    border-radius: 5px; 
+  }
+
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column; 
+      gap: 10px; 
+    }
+  
+    .logo img {
+      max-width: 120px;
+    }
+  }
+ 
+@font-face {
+  font-family: 'Lexand';
+  src: url('path/to/lexand-regular.woff2') format('woff2'),
+       url('path/to/lexand-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Lexand', sans-serif;
+}
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
